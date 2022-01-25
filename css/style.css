@@ -1,0 +1,77 @@
+:root {
+  --brightorange: hsl(31, 77%, 52%);
+  --darkcyan: hsl(184, 100%, 22%);
+  --verydarkcyan: hsl(179, 100%, 13%);
+  --transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --verylightgray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--verylightgray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparentwhite);
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--verylightgray);
+}
+
+.card-container {
+  display: flex;
+  width: 45vw;
+  flex-wrap: wrap;
+}
+
+.sedan-container {
+  width: 15vw;
+  background-color: var(--brightorange);
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  border-radius: 8px 0 0 8px;
+}
+
+.sedan-icon {
+  margin: 2.5rem 2.5rem 0;
+}
+
+.sedan-title {
+  margin: 1rem 2.5rem 0;
+  font-size: 42px;
+}
+
+.sedan-text {
+  margin: 2rem 3rem 2rem 2.5rem;
+}
+
+.sedan-learn__btn {
+  background-color: var(--verylightgray);
+  border-radius: 28px;
+  margin: 2.4rem 7rem 2.4rem 2.5rem;
+  text-align: center;
+  border: 1px solid var(--verylightgray);
+  transition: background-color 0.5s;
+}
+
+.sedan-learn__text {
+  color: var(--brightorange);
+  margin: 0.75rem auto;
+  transition: color 0.5s;
+}
+
+.sedan-learn__btn:hover{
+  background-color: var(--brightorange);
+    cursor: pointer;
+}
+
+.sedan-learn__btn:hover > .sedan-learn__text {
+  color: var(--verylightgray);
+}
+/* TODO: wrap flex cols */
